@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+.bg-img {
+  background-image: url("image/nav_photo.jpg");
+  min-height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+h1 {
+    text-align: center;
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 800%;
+}
+.zelena {
+    background-color: #009249;
+    color: white;
+    text-align: center;
+    font-size: 200%;
+}
+.cervena {
+    background-color: #CE2B37;
+    color: white;
+    text-align: center;
+    font-size: 200%;
+}
+.cervena_podnadpis {
+    color: #CE2B37;
+    text-align: center;
+    font-size: 200%;
+}
+.cerveny_text{
+    font-size: 150%;
+    text-align: center;
+}
+table.unstyledTable {
+    height: 200px;
+}
+table.unstyledTable td, table.unstyledTable th {
+    border: 1px solid #AAAAAA;
+    padding: 4px 2px;
+}
+table.unstyledTable thead {
+    background: #DDDDDD;
+}
+table.unstyledTable thead th {
+    font-weight: normal;
+    border-left: 4px solid #D0E4F5;
+}
+table.unstyledTable thead th:first-child {
+    border-left: none;
+}
+table.unstyledTable tfoot {
+    font-weight: bold;
+    border-top: 0px solid #444444;
+}
+.cervena_foot {
+    background-color: #CE2B37;
+  }
+.bila_foot {
+    background-color: white;
+    text-align: center;
+}
+.zelena_foot {
+    background-color: #009249;
+}
+
+.glow {
+  font-size: 100%;
+  color: #fff;
+  text-align: left;
+  -webkit-animation: zare 1s ease-in-out infinite alternate;
+  -moz-animation: zare 1s ease-in-out infinite alternate;
+  animation: zare 1s ease-in-out infinite alternate;
+}
+
+@keyframes pohyb {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+}
+
+@keyframes otocka {
+  from {transform:rotate(0deg);
+  }
+  to {transform:rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}
+
+@keyframes zmenabarvy {
+  0% { 
+    color: red; 
+  }
+  30% {
+     color: green; 
+    }
+  70% {
+     color: white; 
+    }
+  100% {
+     color: red; 
+    }
+}
+
+@keyframes posunpodnadpisu {
+  0%   {left:0px; top:0px;}
+  50%  {left:550px; top:0px;}
+  100% {left:0px; top:0px;}
+}
+
+@keyframes zare {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px green, 0 0 50px green, 0 0 60px green, 0 0 70px green, 0 0 80px green;
+  }
+}
