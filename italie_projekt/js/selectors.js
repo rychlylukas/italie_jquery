@@ -34,3 +34,4 @@ $(function () {
         $(".cervena").eq(1).text("A přece se točí...");
     });
 })
+

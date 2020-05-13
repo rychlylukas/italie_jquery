@@ -10,6 +10,15 @@ body {
   background-size: cover;
   position: relative;
 }
+.bg-img-history {
+  background-image: url("image/nav_photo.jpg");
+  min-height: 800px;
+  filter: grayscale(100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 h1 {
     text-align: center;
     padding-top: 1.5%;
@@ -29,12 +38,33 @@ h1 {
     text-align: center;
     font-size: 200%;
 }
+.zelena_mensi {
+  background-color: #009249;
+  color: white;
+  text-align: center;
+  font-size: 150%;
+}
 .cervena {
     background-color: #CE2B37;
     color: white;
     text-align: center;
     font-size: 200%;
 }
+
+.cervena_mensi {
+  background-color: #CE2B37;
+  color: white;
+  text-align: center;
+  font-size: 150%;
+}
+
+.cervena_okraj {
+  border: #CE2B37 5px solid;
+  color: #CE2B37;
+  text-align: center;
+  font-size: 200%;
+}
+
 .cervena_podnadpis {
     color: #CE2B37;
     text-align: center;
@@ -75,7 +105,6 @@ table.unstyledTable tfoot {
 .zelena_foot {
     background-color: #009249;
 }
-
 .glow {
   font-size: 100%;
   color: #fff;
@@ -83,6 +112,76 @@ table.unstyledTable tfoot {
   -webkit-animation: zare 1s ease-in-out infinite alternate;
   -moz-animation: zare 1s ease-in-out infinite alternate;
   animation: zare 1s ease-in-out infinite alternate;
+}
+
+.circle {
+  padding: 13px 20px;
+  background-color: #CE2B37;
+  color: #fff;
+  max-height: 50px;
+  z-index: 2;
+}
+
+.how-it-works.row .col-2 {
+  align-self: stretch;
+}
+.how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid #CE2B37;
+  z-index: 1;
+}
+.how-it-works.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+.how-it-works.row .col-2.full::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+.how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+.timeline hr {
+  border-top: 3px solid #CE2B37;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+.timeline .corner {
+  border: 3px solid #CE2B37;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
 }
 
 @keyframes pohyb {
